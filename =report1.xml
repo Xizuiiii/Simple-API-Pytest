@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="8" time="0.122" timestamp="2026-01-29T14:58:28.020153+08:00" hostname="Tamago"><testcase classname="Test_first" name="test1" time="0.001" /><testcase classname="Test_first" name="test2" time="0.001" /><testcase classname="Test_first" name="test3" time="0.001"><failure message="AssertionError: title does not match&#10;assert 'antony' is 'antony is good'">def test3():
+        name = 'antony'
+        title='antony is good'
+&gt;       assert name is title,'title does not match'
+E       AssertionError: title does not match
+E       assert 'antony' is 'antony is good'
+
+Test_first.py:14: AssertionError</failure></testcase><testcase classname="Test_four" name="test_respond" time="0.001" /><testcase classname="Test_sec" name="test_login" time="0.000" /><testcase classname="Test_sec" name="test_check" time="0.000" /><testcase classname="Test_sec" name="test_logout" time="0.000" /><testcase classname="Test_three.MyTestCase" name="test_something" time="0.001"><failure message="AssertionError: True != False">self = &lt;Test_three.MyTestCase testMethod=test_something&gt;
+
+    def test_something(self):
+&gt;       self.assertEqual(True, False)  # add assertion here
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: True != False
+
+Test_three.py:6: AssertionError</failure></testcase></testsuite></testsuites>
